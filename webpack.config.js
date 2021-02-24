@@ -37,6 +37,17 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.(png|jpe?g|gif|svg)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[path][name].[ext]',
+                        },
+                    },
+                ],
+            },
+            {
                 test: /\.(ts|tsx)$/,
                 use: {
                     loader: 'ts-loader',

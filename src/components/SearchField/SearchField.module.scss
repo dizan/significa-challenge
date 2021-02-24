@@ -1,0 +1,35 @@
+
+#wrapper {
+  background: #FFFFFF;
+  border-radius: 4px;
+  position: relative;
+  width: 100%;
+
+  #search-icon {
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+  }
+
+  input {
+    border: none;
+    outline: 0;
+    padding: 13px 12px 12px 40px;
+    border-radius: 4px;
+    height: 44px;
+    box-sizing: border-box;
+    line-height: 19px;
+    width: 100%;
+    color: #000;
+    font-size: 16px;
+
+
+    &::placeholder {
+      color: #7A8C99;
+    }
+  }
+}
+
+
