@@ -38,8 +38,8 @@ module.exports = {
         '@typescript-eslint/no-use-before-define': ['error'],
         'import/no-unresolved': 'off',
         'import/extensions': ['error', 'never'],
-        'react/jsx-indent': ['error', 4],
-        indent: ['error', 4],
+        'react/jsx-indent': ['error', 2],
+        indent: ['error', 2],
         'max-len': ['error', {
             code: 120,
         }],

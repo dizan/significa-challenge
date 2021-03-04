@@ -11,6 +11,7 @@
     left: 12px;
     width: 16px;
     height: 16px;
+    z-index: 1;
   }
 
   input {
@@ -24,7 +25,9 @@
     width: 100%;
     color: #000;
     font-size: 16px;
-
+    position: relative;
+    z-index: 2;
+    background: transparent;
 
     &::placeholder {
       color: #7A8C99;
