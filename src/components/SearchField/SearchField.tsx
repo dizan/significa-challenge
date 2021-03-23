@@ -1,21 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './SearchField.module.scss';
 import iconSearch from '../../assets/images/icon-search.svg';
 
 export interface SearchFieldProps {
   value: string;
   placeholder: string;
+  className: string;
   onEntered(search: string): void;
 }
 
-export function SearchField({value, onEntered, placeholder}: SearchFieldProps): JSX.Element {
+export function SearchField({ value, onEntered, placeholder, className}: SearchFieldProps): JSX.Element {
 
   const handleChange = (enteredValue: string) => {
     onEntered(enteredValue);
   };
 
   return (
-    <section id={styles.wrapper}>
+    <section className={className} id={styles.wrapper}>
       <input
         type="text"
         placeholder={placeholder}

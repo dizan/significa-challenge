@@ -1,0 +1,25 @@
+
+#wrapper{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    img{
+      height: auto;
+      max-width: 100%;
+    }
+
+    header {
+      text-align: center;
+      margin:8px 0;
+    }
+
+    p.description{
+      font-size: 16px;
+      color: #7A8C99;
+      text-align: center;
+    }
+}
+
+

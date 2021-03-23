@@ -1,0 +1,52 @@
+$screenSizes: (
+  mobileMin: 320px,
+  mobileMax: 480px,
+  tabletMin: 481px,
+  tabletMax: 768px,
+  laptopMin: 769px,
+  laptopMax: 900px,
+  desktopMin: 901px,
+  desktopMax: 1024px,
+  largeMin: 1025px,
+);
+
+// Sass variables for writing out media queries
+//$media: (
+//  mobile: '(min-width:#{map-get($screenSizes, mobileMin)} and max-width: #{map-get($screenSizes, mobileMax)})',
+//  tablet: '(min-width:#{map-get($screenSizes, tabletMin)} and max-width: #{map-get($screenSizes, tabletMax)})',
+//  laptop: '(min-width:#{map-get($screenSizes, laptopMin)} and max-width: #{map-get($screenSizes, laptopMax)})',
+//  desktop: '(min-width:#{map-get($screenSizes, desktopMin)} and max-width: #{map-get($screenSizes, desktopMax)})',
+//  large: '(min-width:#{map-get($screenSizes, largeMin)})',
+//);
+
+
+@mixin mobile {
+  @media (min-width: #{map-get($screenSizes, mobileMin)}) and (max-width: #{map-get($screenSizes, mobileMax)}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{map-get($screenSizes, tabletMin)}) and (max-width: #{map-get($screenSizes, tabletMax)}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{map-get($screenSizes, laptopMin)}) and (max-width: #{map-get($screenSizes, laptopMax)}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{map-get($screenSizes, desktopMin)}) and (max-width: #{map-get($screenSizes, desktopMax)}) {
+    @content;
+  }
+}
+@mixin large {
+  @media (min-width: #{map-get($screenSizes, largeMin)}) {
+    @content;
+  }
+}
+
+
